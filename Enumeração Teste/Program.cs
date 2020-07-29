@@ -11,12 +11,13 @@ namespace Enumeração_Teste
             Order d1 = new Order {Id=0001,Moment=DateTime.Now,Status=OrderStatus.PedingPayment};
             Console.WriteLine(d1);
             Console.WriteLine();
+
             Console.WriteLine("Conversão de string para enumeração");
             string status = OrderStatus.PedingPayment.ToString();// conversão de string para enumeração
             Console.WriteLine(status);
             Console.WriteLine();
             Console.WriteLine("Conversão de enumeração para string");
-            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");//conversão de numeração para string
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");//conversão de numeração para string.
             Console.WriteLine(os);
         }
     }
