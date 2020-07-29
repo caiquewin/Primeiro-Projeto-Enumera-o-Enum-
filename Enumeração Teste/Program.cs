@@ -16,7 +16,7 @@ namespace Enumeração_Teste
             Console.WriteLine(status);
             Console.WriteLine();
             Console.WriteLine("Conversão de enumeração para string");
-            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");//conversão de numeração para string
             Console.WriteLine(os);
         }
     }
